@@ -13,6 +13,16 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
 
     <style>
+        .textshadow {
+            text-shadow: 3px 3px 3px black;
+        }
+
+        @media (max-width: 640px){
+            .smtext{
+                font-size: 1.5rem;
+            }
+        }
+
         .worksans {
             font-family: 'Work Sans', sans-serif;
         }
@@ -29,41 +39,6 @@
         .hover\:grow:hover {
             transform: scale(1.02);
         }
-        
-        .carousel-open:checked + .carousel-item {
-            position: static;
-            opacity: 100;
-        }
-        
-        .carousel-item {
-            -webkit-transition: opacity 0.6s ease-out;
-            transition: opacity 0.6s ease-out;
-        }
-        
-        #carousel-1:checked ~ .control-1,
-        #carousel-2:checked ~ .control-2,
-        #carousel-3:checked ~ .control-3 {
-            display: block;
-        }
-        
-        .carousel-indicators {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-        }
-        
-        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-            color: #000;
-            /*Set to match the Tailwind colour you want the active one to be */
-        }
     </style>
 
 </head>
@@ -72,32 +47,38 @@
 
     <!--Nav-->
 
-    <nav id="header" class="fixed bg-white w-full z-30 top-0 py-0">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
-            <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
-                <nav>
-                    <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                        <li>
-                            <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#about">About</a>
-                        </li>
-                    </ul>
-                </nav>
+    <nav id="header" class="fixed bg-white w-full z-30 top-0 py-0 no-underline text-gray-800">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-4">
+            <div>
+                <ul>
+                    <li>
+                        <a class="inline-block hover:text-black hover:font-bold py-2 px-4" href="#corkage">Corkage</a>
+                    </li>
+                </ul>
             </div>
-            <div class="order-1 md:order-2">
-                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-3xl " href="#">
-                    <h1>WineFree</h1>
+            <div>
+                <a class="flex items-center tracking-wide font-bold text-3xl" href="#">
+                    WineFree
                 </a>
             </div>
         </div>
     </nav>
 
-    <!--Hero Section-->
+    <!--
+                <div class="text-black lg:text-3xl sm:text-sm my-4">와인을 가져갈수 있는 모든곳.. </div>
+                <h1 class="text-black text-3xl my-4">맛 좋은 음식과의 조합 그리고..</h1>
+                <h1 class="text-black text-3xl my-4">그 모든것들이 있는 여기는 와인프리입니다.</h1>
 
-    <section class="w-full mt-20 mx-auto bg-nordic-gray-light flex pt-12 md:pt-30 md:items-start bg-cover bg-right" style="max-width:1600px; height: 30rem; background-image: url('./img/bg_01.png');">
-        <div class=" container mx-auto">
-            <div class="flex flex-col w-full lg:w-1/7 justify-center items-start px-6 tracking-wide">
-                <h1 class="text-black text-3xl my-4">BUSAN WINE CORKAGE RESTAURANT INFORMATION</h1>
-                <h1 class="text-black text-3xl my-10 lg:w-1/4">와인 마시고 싶은데.. 갈곳이 없네!</h1>
+        Hero Section
+    --> 
+
+    <section class="w-full mt-20 mx-auto flex pt-12 bg-cover bg-center" style="height: 35rem; background-image: url('./img/bg_01.png');">
+        <div class="container mx-auto">
+            <div class="flex flex-col w-full lg:w-auto justify-center items-start px-6 text-white tracking-wide lg:text-3xl sm:text-2xl smtext textshadow my-4">
+                <div>와인을 가져갈 수 있는 모든 곳</div>
+                <div>맛 좋은 음식과의 조합</div>
+                <br>
+                <div>WineFree.kr</div>
             </div>
         </div>
     </section>
@@ -108,7 +89,7 @@
 
         <div class="container mx-auto flex items-top flex-wrap pt-4 pb-12">
 
-            <nav id="store" class="w-full z-20 top-0 px-6 py-1">
+            <nav id="corkage" class="w-full z-20 top-0 px-6 py-1">
                 <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3 uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">
 				Restaurant
                 </div>
