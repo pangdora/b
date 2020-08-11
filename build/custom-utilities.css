@@ -1,0 +1,29 @@
+/* Additional CSS */
+
+.worksans {
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .hover\:grow {
+    transition: all 0.3s;
+    transform: scale(1);
+  }
+  
+  .hover\:grow:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 640px){
+    .smtext{
+        font-size: 1.5rem;
+    }
+  }
+  
+  .textshadow {
+    text-shadow: 3px 3px 3px black;
+  }
+  
+  .anchor:target {
+    padding-top: 90px;
+  }
+  
