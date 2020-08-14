@@ -8,7 +8,9 @@
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.6.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss-import": "^12.0.1"
+  },
   "scripts": {
     "build": "postcss css/tailwind.css -o build/tailwind.css"
   },
