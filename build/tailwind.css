@@ -13,12 +13,6 @@
     transform: scale(1.02);
   }
 
-@media (max-width: 640px){
-    .smtext{
-        font-size: 1.5rem;
-    }
-  }
-
 .textshadow {
     text-shadow: 3px 3px 3px black;
   }
@@ -141,7 +135,7 @@ samp {
 
 /**
  * Add the correct font size in all browsers.
- *
+ */
 
 small {
   font-size: 80%;
