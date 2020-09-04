@@ -10,7 +10,6 @@
     <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
 
     <link href="../build/tailwind.css" rel="stylesheet">
-    <link href="./css/custom-utilities.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
@@ -19,7 +18,7 @@
 
     <!--Nav-->
 
-    <nav id="header" class="fixed bg-white w-full z-30 top-0 py-0 no-underline text-gray-800 b-shadow">
+    <nav id="header" class="fixed bg-white w-full z-30 top-0 py-0 no-underline text-gray-800">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-4">
             <div>
                 <ul>
@@ -50,23 +49,26 @@
     <section class="bg-white pt-8">
 
         <div class="w-full container mx-auto flex items-start flex-wrap pt-0 pb-10">
-  
-            <div class="inline-block items-center mt-0 px-12 py-10 tracking-wide font-bold text-gray-800 text-2xl">
-                <div class=" inline-block w-20 ">
+            
+            <div class="grid grid-cols-2 mt-0 px-5 py-10 tracking-wide text-gray-800">
+                <div class="flex w-50">
                     <img src="../img/wine_icon.png">
+                    <div class="text-2xl font-bold">
+                    WineFree만의 의견 (레이아웃 조정 필요)
+                    </div>
                 </div>
-                WineFree만의 의견 (레이아웃 조정 필요)
-                </div>
-                <div class="container flex px-12 py-5 mx-auto font-bold text-gray-900 bg-white pb-5border-gray-400">
+                <div class="container flex px-12 py-5 mx-auto text-base text-gray-900 bg-white pb-5border-gray-400">
                         부부 사장님이 운영하시는 이탈리안 레스토랑 입니다.<br>
                         최대 16명 식사가 가능한 작은곳 이며 와인잔, 아이스버킷 제공해 줍니다.<br>
                         부부 사장님이 운영하시는 이탈리안 레스토랑 입니다.<br>
                         최대 16명 식사가 가능한 작은곳 이며 와인잔, 아이스버킷 제공해 줍니다.<br>
                 </div>
-                <div class="w-full z-20 top-0 py-1">
-                    <hr style="border: solid 1px gray;">
             </div>
 
+            <div class="w-full z-20 pb-3">
+                <hr style="border: solid 1px gray;">
+            </div>
+            
             <div class="grid grid-cols-1 sm:grid-cols-2">
                 <div class="w-full p-4 flex-col">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 grid-container">
