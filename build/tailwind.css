@@ -61,6 +61,11 @@ a.anchor {
   grid-template-columns: auto;
 }
 
+.grid-c30 {
+  grid-template-rows: auto;
+  grid-template-columns: 40% auto;
+}
+
 .b-shadow{
   box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06); 
 }
