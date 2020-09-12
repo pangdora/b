@@ -33,7 +33,21 @@ a.anchor {
 /* 로고 폰트 적용 CSS */
 
 .myfont {
-  font-family:'Handlee', cursive;;
+  font-family:'Handlee', cursive;
+}
+
+.myfont-bebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+@font-face {
+  font-family: 'Canonatia';
+  src:url('/font/canonatia/Canonatia.woff') format('woff'),
+  url('/font/canonatia/Canonatia.ttf') format('truetype');
+}
+
+.myfont-canonatia {
+  font-family: 'Canonatia';
 }
 
 /* 구글맵 반응형 CSS */
@@ -60,9 +74,11 @@ a.anchor {
   grid-template-columns: auto;
 }
 
-.grid-c30 {
-  grid-template-rows: auto;
-  grid-template-columns: 40% auto;
+@media (min-width: 640px) {
+  .grid-c30 {
+    grid-template-rows: auto;
+    grid-template-columns: 40% auto;
+  }
 }
 
 .b-shadow{
