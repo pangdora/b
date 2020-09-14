@@ -13,18 +13,21 @@
     <link href="./css/custom-utilities.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
 </head>
 
 <body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
 
     <!--Nav-->
 
-    <nav id="header" class="fixed bg-white w-full z-30 top-0 py-0 no-underline text-gray-800 b-shadow">
+    <nav id="header" class="fixed w-full z-30 top-0 py-0 no-underline">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-4">
             <div>
                 <ul>
                     <li>
-                        <a class="inline-block hover:text-black hover:font-bold py-2 px-2" href="#corkage">Corkage</a>
+                        <a class="inline-block hover:text-gray-600 py-2 px-2" href="#corkage">Corkage</a>
                     </li>
                 </ul>
             </div>
@@ -36,9 +39,9 @@
         </div>
     </nav>
 
-    <section class="w-full mt-20 mx-auto flex pt-20 bg-cover bg-center" style="height: 37rem; background-image: url('./img/bg10_01.jpg');">
+    <section class="w-full mx-auto flex pt-20 bg-cover bg-center" style="height: 37rem; background-image: url('./img/bg10_01.jpg');">
         <div class="container mx-auto">
-            <div class="flex flex-col w-full lg:w-auto justify-center items-start px-6 text-white tracking-wide lg:text-3xl text-2xl textshadow my-4">
+            <div class="flex flex-col w-full lg:w-auto justify-center items-start px-6 text-white tracking-wide lg:text-3xl text-2xl textshadow my-20">
                 <div>와인을 가져갈 수 있는 모든 곳</div>
                 <div>맛 좋은 음식과의 조합</div>
                 <br>
@@ -313,6 +316,15 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('#header').addClass('active'); }
+            else{ $('#header').removeClass('active');
+            }
+        }); 
+    </script>
+    
 </body>
 
 </html>
