@@ -108,3 +108,8 @@ a.anchor {
   height: 44rem;
   overflow: hidden;
 }
+/*
+html {
+  scroll-behavior: smooth;
+}
+*/
