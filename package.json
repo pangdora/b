@@ -5,6 +5,7 @@
   "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "headhesive": "^1.2.4",
     "postcss-cli": "^7.1.1",
     "slick-carousel": "^1.8.1"
   },

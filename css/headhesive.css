@@ -1,0 +1,28 @@
+.banner{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color:white;
+
+    -webkit-transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    transition:all 300ms ease-in-out
+}
+
+.banner--stick{
+    background:rgba(255, 255, 255, 0.9);
+    z-index:50;
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06); 
+    color: #130e0e;
+    
+    -webkit-transform:translateY(0%);
+    -ms-transform:translateY(0%);
+    transform:translateY(0%)
+}
+
+.banner--unstick{
+    background:transparent;
+    opacity:0;
+}

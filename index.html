@@ -12,6 +12,8 @@
     <link href="./build/tailwind.css" rel="stylesheet">
     <link href="./css/custom-utilities.css" rel="stylesheet">
 
+    <link href="./css/headhesive.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 
@@ -25,32 +27,34 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
     
 </head>
 
-<body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
-
-
-
+<body class="work-sans leading-normal text-base tracking-normal">
 
     <!--Nav-->
+    <header class="banner">
+        <nav class="w-full z-30 top-0 py-2 no-underline">
+            <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="inline-block hover:text-yellow-500 py-2 px-2" href="#corkage">Corkage</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="myfont flex items-center tracking-wide font-bold text-3xl" href="../index.html">
+                        WineFree
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav id="header" class="fixed w-full z-30 top-0 py-2 no-underline">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6">
-            <div>
-                <ul>
-                    <li>
-                        <a class="inline-block hover:text-gray-600 py-2 px-2" href="#corkage">Corkage</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <a class="myfont flex items-center tracking-wide font-bold text-3xl" href="../index.html">
-                    WineFree
-                </a>
-            </div>
-        </div>
-    </nav>
+
 
     <!--
     <section class="w-full mx-auto flex pt-20 bg-cover bg-center" style="height: 37rem; background-image: url('./img/bg10_01.jpg');">
@@ -71,6 +75,8 @@
         <div><img src="./img/bg15_01.jpg"></div>
     </div>
 
+    <a id="showHere"></a>
+
     <!--Contents-->
 
     <a class="anchor" id="corkage"></a>
@@ -78,7 +84,7 @@
 
         <div class="w-full container mx-auto flex items-start flex-wrap pt-0 pb-12">
 
-            <nav class="w-full z-20 top-0 px-6 py-1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+            <nav class="w-full z-10 top-0 px-6 py-1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
                 <div class="items-center mt-0 px-2 py-3 uppercase tracking-wide font-bold text-gray-800 text-xl">
 				Restaurant
                 </div>
@@ -340,7 +346,7 @@
         </div>
     </footer>
     
-    <!-- ScrollTop Effect Script -->
+    <!-- ScrollTop Effect Script 
 
     <script type="text/javascript">
         $(window).on('scroll',function(){
@@ -350,6 +356,8 @@
             }
         }); 
     </script>
+
+    -->
 
     <!-- Slick Slider Script -->
 
@@ -411,6 +419,44 @@
             }
         });
 
+    </script>
+
+    <script type="text/javascript" src="./node_modules/headhesive/dist/headhesive.js"></script>
+
+    <script>
+       
+
+        // Options
+        var options = {
+        // Scroll offset. Accepts Number or "String" (for class/ID)
+        offset: '#showHere', // OR — offset: '.classToActivateAt',
+
+        // Custom classes
+        classes: {
+
+        // Cloned elem class
+        clone: 'banner--unstick',
+
+        // Stick class
+        stick: 'banner--stick',
+
+        // Unstick class
+        unstick: 'banner--unstick'
+        },
+
+        // Throttle scroll event to fire every 250ms to improve performace
+        throttle: 250,
+
+        // Callbacks
+        onInit: function() {},
+        onStick: function() {},
+        onUnstick: function() {},
+        onDestroy: function() {},
+        }
+
+        // Create a new instance of Headhesive and pass in some options
+        var header = new Headhesive('.banner', options);
+    
     </script>
     
 </body>
