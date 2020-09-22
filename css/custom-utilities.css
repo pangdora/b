@@ -55,6 +55,37 @@ a.anchor {
   font-family: 'Canonatia';
 }
 
+@font-face {
+  font-family: 'Lunarbar';
+  src:url('/font/lunarbar/LUNABAR.woff') format('woff'),
+  url('/font/lunarbar/LUNABAR.TTF') format('truetype');
+}
+
+.myfont-lunarbar {
+  font-family: 'Lunarbar';
+}
+
+@font-face {
+  font-family: 'Lush';
+  src:url('/font/lush/Lush.woff') format('woff'),
+  url('/font/lush/Lush.ttf') format('truetype');
+}
+
+.myfont-lush {
+  font-family: 'Lush';
+}
+
+@font-face {
+  font-family: 'Sketch';
+  src:url('/font/sketch/Sketch_Block.woff') format('woff'),
+  url('/font/sketch/Sketch_Block.ttf') format('truetype');
+}
+
+.myfont-sketch {
+  font-family: 'Sketch';
+}
+
+
 /* 구글맵 반응형 CSS */
 
 .embed-container { 
