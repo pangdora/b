@@ -4,14 +4,15 @@
   "description": "",
   "main": "postcss.config.js",
   "dependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.1.0",
     "headhesive": "^1.2.4",
+    "postcss": "^8.2.1",
     "postcss-cli": "^7.1.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.7.2"
+    "tailwindcss": "^2.0.2"
   },
   "scripts": {
     "build": "postcss css/tailwind.css -o build/tailwind.css"
